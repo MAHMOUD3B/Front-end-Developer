@@ -1,0 +1,24 @@
+/* styling footer section */
+footer {
+  .nav a {
+    color: var(--subTitle);
+
+    &:hover {
+      color: var(--blue);
+      font-weight: bold;
+    }
+  }
+}
+
+/* styling scroll to top button */
+.scroll-btn {
+  width: 45px;
+  height: 45px;
+  border: 1px solid var(--title);
+  background-color: rgba(0, 106, 255, 0.7);
+  color: var(--title);
+
+  &:hover {
+    background-color: var(--blue);
+  }
+}

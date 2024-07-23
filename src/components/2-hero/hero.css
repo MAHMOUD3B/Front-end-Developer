@@ -1,0 +1,41 @@
+/* styling hero section */
+.hero {
+  .info {
+    .profile {
+      .profile-image {
+        width: fit-content;
+        outline: 2px solid var(--orange);
+
+        img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .icon {
+        color: var(--blue);
+      }
+    }
+
+    .title {
+      color: var(--title);
+    }
+
+    .subtitle {
+      color: var(--subTitle);
+    }
+
+    /* social icons */
+    .icons {
+      .icon {
+        color: var(--subTitle);
+        cursor: pointer;
+
+        &:hover {
+          scale: 1.3;
+          color: var(--title);
+        }
+      }
+    }
+  }
+}

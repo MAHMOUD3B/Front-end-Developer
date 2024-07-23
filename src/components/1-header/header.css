@@ -1,0 +1,113 @@
+/* Styling header of page */
+header {
+  .menu {
+    color: var(--title) !important;
+  }
+
+  nav {
+    background-color: var(--bgHeader) !important;
+
+    li a {
+      color: var(--title) !important;
+      font-weight: bold !important;
+
+      &:hover {
+        color: var(--blue) !important;
+      }
+    }
+  }
+
+  .theme-btn {
+    width: 40px;
+    height: 40px;
+    background-color: var(--bgHeader) !important;
+    color: var(--subTitle);
+    border: 1px solid rgb(255, 229, 180);
+
+    &:hover {
+      color: var(--title);
+      border: 1px solid var(--orange);
+    }
+  }
+}
+
+/* styling menu popup */
+.popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(40, 40, 50, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+
+  .menu {
+    background-color: var(--secondary);
+    width: 90%;
+    animation: popup 0.8s ease;
+    -webkit-animation: popup 0.8s ease;
+
+    li .close-btn {
+      color: crimson;
+      cursor: pointer;
+      width: fit-content;
+
+      &:hover {
+        animation: rotate 1s ease;
+        -webkit-animation: rotate 1s ease;
+        font-size: 28px !important;
+      }
+    }
+
+  }
+
+  .menu-item:not(:last-child) {
+    border-bottom: 1px solid #777;
+    padding: 10px 0px;
+  }
+
+  .menu-item:last-child {
+    margin-top: 10px;
+  }
+
+  a {
+    color: var(--title);
+
+    &:hover {
+      color: var(--blue);
+    }
+  }
+}
+
+/* Animations */
+/* this animation for rotate the close button */
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+  }
+}
+
+/* this animation to animate the popup */
+@keyframes popup {
+  0% {
+    scale: 0.7;
+  }
+
+  60% {
+    scale: 1.1;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
