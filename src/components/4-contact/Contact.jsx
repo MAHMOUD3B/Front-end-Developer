@@ -17,10 +17,7 @@ const Contact = () => {
           <i className="fa fa-envelope me-3 icon"></i>
           Contact Us
         </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium
-          aspernatur iure quos officiis pariatur incidunt.
-        </p>
+        <p>Contact me via email and I will be happy to respond to you. 😊💖</p>
       </div>
       {/* contact form */}
       <div className="contact-content my-4 d-flex align-items-center">

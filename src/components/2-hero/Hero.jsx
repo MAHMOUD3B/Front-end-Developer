@@ -14,28 +14,23 @@ const Hero = () => {
       <div className="info">
         <div className="profile d-flex align-items-end">
           <div className="profile-image overflow-hidden rounded-circle border">
-            <img src="./images/photo1.jpg" alt="profile-img" />
+            <img src="./images/My_Profile.jpg" alt="profile-img" />
           </div>
           <span className="icon ms-2 mb-2">
             <i className="fa fa-certificate"></i>
           </span>
         </div>
         <h1 className="title my-3">
-          Software designer, founder, and amateur astronaut
+          Software Engineer, Frontend Web Developer
         </h1>
         <p className="subtitle">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-          recusandae natus nihil ratione quasi distinctio esse corrupti alias!
-          Cumque possimus assumenda placeat fugiat voluptates impedit.
+          A front-End developer, designing and developing an attractive,
+          interactive and responsive user interface that provides top-notch UI.
+          I look forward to working within an environment where I can learn,
+          impact my team and help in achieving the company goals.
         </p>
         {/* social links */}
         <div className="icons fs-4 d-flex align-items-center gap-3">
-          <a href="/#" className="icon">
-            <i className="fa-brands fa-twitter"></i>
-          </a>
-          <a href="/#" className="icon">
-            <i className="fa-brands fa-instagram"></i>
-          </a>
           <a
             href="https://github.com/MAHMOUD3B"
             target="blank"
